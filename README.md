@@ -1,16 +1,14 @@
-Zend Framework Day
+WordPress Day
 ===========
 
-Zend Framework è uno dei framework PHP più apprezzati sul mercato
+WordPress è attualmente il sistema per la gestione di blog e contenuti più utizzato al mondo
 ------------------------------------------------------------
 
-Zend Framework e' diventato il riferimento per quanto riguarda lo sviluppo ad alto livello con PHP e molti software open source, come Magento, Piwik e molti altri progetti hanno gia' iniziato ad includerlo al loro interno. 
+Il WordPress Day è un evento per tutti gli sviluppatori di temi e plugin che introduce le best practice e ne mostra case study ad alto livello.
 
-Lo Zend Framework|Day e' l'evento di riferimento su Zend Framework che introduce le best practice e ne mostra case study ad alto livello.
+L'evento si terrà a Bologna il 13 Settembre 2013
 
-L'evento si terrà a Milano il 1 Febbraio 2013
-
-Tutte le informazioni sono disponibili sul sito [ZFDay.it](http://www.zfday.it)
+Tutte le informazioni sono disponibili sul sito [WpDay.it](http://www.wpday.it)
 
 ---
 
