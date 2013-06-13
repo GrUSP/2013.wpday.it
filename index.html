@@ -39,14 +39,14 @@
 	function initialize_map() {
 	        var mapOptions = {
 	          zoom: 15,
-	          center: new google.maps.LatLng(45.262262, 7.920447),
+	          center: new google.maps.LatLng(44.520821,11.347868),
 	          mapTypeId: google.maps.MapTypeId.ROADMAP
 	        }
 	        var map = new google.maps.Map(document.getElementById('map_canvas'),
 	                                      mapOptions);
 
 	        var I3P = new google.maps.Marker({
-	            position: new google.maps.LatLng(45.262262, 7.920447),
+	            position: new google.maps.LatLng(44.520821,11.347868),
 	            map: map,
 	            icon: 'img/marker.png',
 				title:"T3LAB"
