@@ -4,518 +4,490 @@
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
-<head>
-	<meta charset="utf-8" />
+    <head>
+        <meta charset="utf-8" />
+
+        <title>WordPress Day - Bologna 13 Settembre 2013</title>
 
-	<title>WordPress Day - Bologna 13 Settembre 2013</title>
+        <!-- Responsive and mobile friendly stuff -->
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+
+        <link href='http://fonts.googleapis.com/css?family=Exo:200,900,700,400|Pacifico' rel='stylesheet' type='text/css'>
+
+        <!-- Included CSS Files -->
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/grid_12_percent.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/tooltip.css">
+
+
+        <!--[if lt IE 9]>
+                <link rel="stylesheet" href="css/ie7_8.css">
+        <![endif]-->
+
+
+
+        <!-- IE Fix for HTML5 Tags -->
+        <!--[if lt IE 9]>
+                <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+        <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+        <script>
+            function initialize_map() {
+                var mapOptions = {
+                    zoom: 15,
+                    center: new google.maps.LatLng(44.520821,11.347868),
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                }
+                var map = new google.maps.Map(document.getElementById('map_canvas'),
+                mapOptions);
 
-	<!-- Responsive and mobile friendly stuff -->
-	<meta name="HandheldFriendly" content="True">
-	<meta name="MobileOptimized" content="320">
-	<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-
-	<link href='http://fonts.googleapis.com/css?family=Exo:200,900,700,400|Pacifico' rel='stylesheet' type='text/css'>
-
-	<!-- Included CSS Files -->
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/grid_12_percent.css">
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/tooltip.css">
-
-
-	<!--[if lt IE 9]>
-		<link rel="stylesheet" href="css/ie7_8.css">
-	<![endif]-->
+                var I3P = new google.maps.Marker({
+                    position: new google.maps.LatLng(44.520821,11.347868),
+                    map: map,
+                    icon: 'img/marker.png',
+                    title:"T3LAB"
+                });
 
 
+
+            }
+        </script>
 
-	<!-- IE Fix for HTML5 Tags -->
-	<!--[if lt IE 9]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-
-	<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-	<script>
-	function initialize_map() {
-	        var mapOptions = {
-	          zoom: 15,
-	          center: new google.maps.LatLng(44.520821,11.347868),
-	          mapTypeId: google.maps.MapTypeId.ROADMAP
-	        }
-	        var map = new google.maps.Map(document.getElementById('map_canvas'),
-	                                      mapOptions);
+    </head>
 
-	        var I3P = new google.maps.Marker({
-	            position: new google.maps.LatLng(44.520821,11.347868),
-	            map: map,
-	            icon: 'img/marker.png',
-				title:"T3LAB"
-	        });
 
+    <body onload="initialize_map()">
 
 
-	      }
-    </script>
+        <div id="wrapper">
+            <div id="site_wrapper">
+                <div id="main_navigation">
+                    <a name="top"></a>
+                    <nav id="site_nav">
+                        <ul class="container">
+                            <li><a href="#top" title="">WordPress Day</a></li>
+                            <li><a href="#info" title="">La conferenza</a></li>
+                            <li><a href="#programma" title="">Call for Paper</a></li>
+                            <li><a href="#location" title="">La location</a></li>
+                            <li><a href="#sponsorizza" title="">Sponsorizza</a></li>
+                            <!-- 
+                            <li><a href="#programma" title="">Programma</a></li>
+                            
+                            <li><a href="#sponsor" title="">Gli sponsor</a></li>
+                            
+                            
+                            -->
+                        </ul>
+                    </nav>
+                </div>
 
-</head>
+                <header id="site_header" class="container">
+                    <div class="grusp_header">
+                        <p class="organizer"><a id="logo_grusp" class="organizer_logo" href="http://www.grusp.it/"><img src="img/logo_grusp.png" alt="GrUSP" width="140" height="67" /><span>Associazione Gruppo Utenti Sviluppatori PHP Italiani</span></a>
 
+                            <em class="plus"><img src="img/bg_plus.png" alt="bg_plus" width="12" height="12" /></em>
 
-<body onload="initialize_map()">
+                            <a id="logo_grusp_to" class="organizer_logo" href="http://bologna.grusp.org/"><img src="img/pugbo.png" alt="pug milano" /><span>PHP User Group Milano </span></a></p>
 
-
-	<div id="wrapper">
-		<div id="site_wrapper">
-			<div id="main_navigation">
-				<a name="top"></a>
-				<nav id="site_nav">
-					<ul class="container">
-						<li><a href="#top" title="">WordPress Day</a></li>
-						<li><a href="#info" title="">La conferenza</a></li>
-                                                <!-- 
-                                                <li><a href="#programma" title="">Programma</a></li>
-						<li><a href="#location" title="">La location</a></li>
-						<li><a href="#sponsor" title="">Gli sponsor</a></li>
-                                                -->
-					</ul>
-				</nav>
-			</div>
-
-			<header id="site_header" class="container">
-				<div class="grusp_header">
-					<p class="organizer"><a id="logo_grusp" class="organizer_logo" href="http://www.grusp.it/"><img src="img/logo_grusp.png" alt="GrUSP" width="140" height="67" /><span>Associazione Gruppo Utenti Sviluppatori PHP Italiani</span></a>
-
-					<em class="plus"><img src="img/bg_plus.png" alt="bg_plus" width="12" height="12" /></em>
-
-					<a id="logo_grusp_to" class="organizer_logo" href="http://bologna.grusp.org/"><img src="img/pugbo.png" alt="pug milano" /><span>PHP User Group Milano </span></a></p>
-
-					<h4>presentano</h4>
-				</div>
-
-				<div class="event_title">
-					<div class="event_logo column_3">
-						<img src="img/wordpress-logo.png" alt="Zend Framwork 2" />
-					</div>
-					<div class="event_name column_8">
-						<h1 id="fittext1">WordPress <em>DAY</em></h1>
-						<h2 id="fittext2">BOLOGNA, 13 Settembre 2013</h2>
-					</div>
-					<div class="clear"></div>
-				</div>
-
-
-				<div class="share">
-					<h4>Share</h4>
-					<div class="addthis_wrapper">
-            <!-- AddThis Button BEGIN -->
-            <div class="addthis_toolbox addthis_default_style ">
-            <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
-            <a class="addthis_button_tweet"></a>
-            <a class="addthis_counter addthis_pill_style"></a>
-            </div>
-            <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=xa-50ac9a3237717dfe"></script>
-            <!-- AddThis Button END -->
-					</div>
-				</div>
-				<div class="separator"></div>
-
-			</header>
-
-			<section class="alpha_8">
-				<div class="container group">
-
-
-
-					<!-- Follow us -->
-					<div class="follow_us">
-						<h4 class="deco">Seguici!</h4>
-
-						<ul class="social_grusp">
-							<li class="grusp_fb"><a href="https://www.facebook.com/events/206580366159056/" title="">Facebook</a></li>
-							<li class="grusp_twitter"><a href="http://twitter.com/wpdayit" title="">Twitter</a></li>
-							<li class="grusp_vimeo"><a href="http://vimeo.com/grusp" title="">Vimeo</a></li>
-						</ul>
-					</div>
-
-
-
-				</div>
-				<div class="separator"></div>
-			</section>
-
-			<a name="info"></a>
-			<section class="alpha_16">
-				<div class="container group">
-
-					<div class="column_6 centered">
-						<h3 class="center">La conferenza</h3>
-
-						<p><strong>WordPress &egrave; è attualmente il sistema per la gestione di blog e contenuti più utizzato al mondo.</strong></p>
-
-						
-
-            <p>Il WordPress Day è un evento per tutti gli sviluppatori di temi e plugin che introduce le best practice e ne mostra case study ad alto livello.
-						</p>
-<p>Rimani informato ed <a href="http://eepurl.com/rCZZT" target="_blank">iscriviti alla nostra newsletter</a></p>
-					</div>
-
-
-					<div class="clear"></div>
-				</div>
-				<div class="separator"></div>
-			</section>
-
-
-			<a name="programma"></a>
-			<section class="alpha_24">
-				<div class="container group">
-					<!-- INSERT CALL FOR PAPER HERE -->
-					<div class="column_6 centered">
-						<h3 class="center">Call for paper</h3>
-						<p>Il programma è in via di definizione. Se desideri <strong>proporre un talk</strong>, non esitare a <a href="https://docs.google.com/a/grusp.org/spreadsheet/viewform?formkey=dGlpUjVPci1xSVJVS0N3X0xrWXcyMFE6MA#gid=0">compilare la tua proposta</a>, hai tempo fino al 10 agosto 2013.</p>
-					</div>
-				</div>
-				<div class="separator"></div>
-			</section>
-
-
-			<section class="alpha_24" style="display: none;">
-                            <a name="programma"></a>
-                            <div class="container group" >
-					<h3 class="center">Il programma</h3>
-					<table id="schedule" border="0" cellspacing="0" cellpadding="0">
-						<thead>
-							<tr>
-								<th>
-									Time
-								</th>
-								<th>
-									Track 1
-								</th>
-
-							</tr>
-						</thead>
-					  <tr class="common_event">
-					  	<td class="time">09:00 &ndash; 09:30</td>
-					    <td><h4><a href="#" title="">Check-in</a></h4></td>
-					  </tr>
-
-					  <tr class="common_event">
-					  	<td class="time">09:30 &ndash; 09:45</td>
-                                                <td>
-                                                    <h4><a href="#" title="">Introduzione PugMi e GrUSP</a></h4>
-                                                    <a href="http://twitter.com/aleinside" title="Alessandro Nuzzo">Alessandro Nuzzo - @aleinside</a><br />
-                                                    <a href="http://www.slideshare.net/aleinside/zfday-introduzione" title="Introduzione" class="slides">Slide</a>
-
-                                                </td>
-					  </tr>
-
-					  <tr class="common_event">
-					  	<td class="time">09:45 &ndash; 10:00</td>
-                                                <td>
-                                                    <h4><a href="#" title="">Zend Framework 2 - Lo stato dell'arte</a></h4>
-                                                    <a href="http://twitter.com/ezimuel" title="Enrico Zimuel">Enrico Zimuel - @ezimuel</a><br />
-<!-- 													<a href="#" title="" class="slides">Slide</a> -->
-
-                                                </td>
-					  </tr>
-
-
-					  <tr class="common_event">
-					  	<td class="time">10:05 &ndash; 10:50</td>
-                                                <td>
-                                                    <h4><a href="#" onclick="javascript:return(false);" rel="tooltip" title="Zend Framework 2 non è l'evoluzione di ZF, ma un progetto nuovo: il codice è stato riscritto e poche sono le parti in comune con la versione precedente. Lo sviluppatore abituato a ZF1 non ha vita facile, ed è fondato il timore di dover imparare tutto da capo. In questo talk vedremo come cambiare le vecchie abitudini di sviluppatori ZF1, per sfruttare al meglio le potenzialità del nuovo strumento. Attraverso esempi concreti, in cui vedremo all'opera i nuovi pattern e le best practice, mostreremo come - partendo con il piede giusto - il passaggio a ZF2 possa essere meno traumatico del previsto. Il talk è orientato soprattutto a chi già conosce ZF1, ma gli argomenti affrontati possono essere utili anche a chi si avvicina a ZF per la prima volta.">Fare con Zend Framework 2 ciò che facevo con ZF1</a></h4>
-                                                    <a href="http://twitter.com/maraspin" title="Steve Maraspin">Steve Maraspin - @maraspin</a><br />
- 													<a href="http://www.slideshare.net/maraspin/zend-framework-2-da-zf-1" title="" class="slides">Slide</a> 
-                                                </td>
-					  </tr>
-
-					  <tr class="break">
-                                              <td class="time">10:50 &ndash; 11:05</td>
-					    <td>
-					    	<h4><strong>Pausa</strong></h4>
-					    </td>
-					  </tr>
-
-					  <tr class="common_event">
-					  	<td class="time">11:05 &ndash; 11:35</td>
-                                                <td>
-                                                    <h4><a href="#"  onclick="javascript:return(false);" rel="tooltip"  title="Negli ultimi mesi ho avuto modo di lavorare con Zend Framework 2. Per me è stata la prima esperienza di un certo peso dentro il mondo Zend venendo dal mondo Symfony. In questa presentazione vorrei fare un confronto 'alle differenze' tra i due framework PHP di seconda generazione più in voga al momento, partendo dal punto di vista di chi conosce Symfony2 (e che quindi ha già in mente concetti come dependency injection e servizi), mettendo in evidenza punti comuni, differenze, possibilità di integrazione">Zend Framework 2 per chi viene da Symfony2</a></h4>
-                                                    <a href="http://twitter.com/_orso_" title="Michele Orselli">Michele Orselli - @_orso_</a><br />
- 													<a href="http://www.slideshare.net/MicheleOrselli/sf2zf2" title="" class="slides">Slide</a>
-
-                                                </td>
-					  </tr>
-
-
-					  <tr class="common_event">
-					  	<td class="time">11:40 &ndash; 12:25</td>
-                                                <td>
-                                                    <h4><a href="#"  onclick="javascript:return(false);" rel="tooltip" title="Verranno introdotti i motivi per cui utilizzare o meno Doctrine 2 ORM, alcune delle sue funzionalità di base e successivamente come installare e configurare Doctrine 2 ORM per l'utilizzo in un'applicazione basata su Zend\Mvc. Successivamente saranno presentate le varie funzionalità di DoctrineModule, tra cui: * Validatori * Autenticazione * Form * Cache * Paginator * CLI Tools * Integrazione con ZendDeveloperTools Verranno inoltre descritte molte delle best-practices da impiegare durante lo sviluppo di un'applicazione basata su DoctrineModule.">Doctrine 2 ORM e Zend Framework 2: un'introduzione a DoctrineModule</a></h4>
-                                                    <a href="http://twitter.com/ocramius" title="Marco Pivetta">Marco Pivetta - @ocramius</a><br />
- 													<a href="http://marco-pivetta.com/doctrine-orm-zf2-tutorial/#/" title="" class="slides">Slide</a>
-
-                                                </td>
-					  </tr>
-
-					  <tr class="common_event">
-					  	<td class="time">12:30 &ndash; 13:00</td>
-                                                <td>
-                                                    <h4><a href="#"  onclick="javascript:return(false);" rel="tooltip" title="Come realizzare un modulo REST con ZF2">Creare moduli RESTful con Zend Framework 2</a></h4>
-                                                    <a href="http://twitter.com/walterdalmut" title="walter dal mut">Walter Dal Mut - @walterdalmut</a><br />
- 													<a href="http://www.slideshare.net/corleycloud/res-tful-modules-in-zf2" title="" class="slides">Slide</a>
-                                                </td>
-					  </tr>
-
-					  <tr class="break lunch">
-					 	<td class="time">13:00 &ndash; 14:15</td>
-
-					    <td><h4><strong>Pranzo</strong></h4></td>
-					  </tr>
-
-					  <tr class="common_event">
-					  	<td class="time">14:15 &ndash; 14:45</td>
-                                                <td>
-                                                    <h4><a href="#"  onclick="javascript:return(false);" rel="tooltip" title="Avere URL pulite e ben strutturate è molto importante, sia da un punto di vista SEO, che di organizzazione delle proprie API. In Zend Framework 2 è il router ad occuparsi di gestire le richieste http, di delegare l'esecuzione delle stesse all'opportuno frammento di codice sorgente, e quindi di estrarne gli eventuali parametri. Questo talk introdurrà le potenti funzionalità del nuovo sistema di routing di ZF2. Grazie a esempi reali (con gestione di richiestte http, ma anche CLI), sarete in grado di utilizzare il nuovo router di ZF2 in tutta la sua flessibilità.">Levate l'ancora! Rotte senza problemi con ZF2</a></h4>
-                                                    <a href="http://twitter.com/drigani" title="Diego Drigani">Diego Drigani - @drigani</a><br />
-													<a href="http://www.slideshare.net/drigani/levate-lancora-rotte-senza-problemi-con-zf2" title="" class="slides">Slide</a> 
-                                                </td>
-					  </tr>
-
-					  <tr class="common_event">
-					  	<td class="time">14:50 &ndash; 15:20</td>
-                                                <td>
-                                                    <h4><a href="#"  onclick="javascript:return(false);" rel="tooltip" title="Come organizzo il mio modello, se le entità di base sono condivise tra più moduli? La mia applicazione ha anche un pannello amministrativo: dove metto viste e file del front-end? Come gestisco le eventuali dipendenze esterne? In questo talk cercherò di rispondere a queste e altre domande relative all'organizzazione di un progetto ZF2, condividendo la mia esperienza pratica, i dubbi che mi sono posto, e le soluzioni che ho adottato. Non sempre le risposte sono state scontate, a maggior ragione dato che - quale sviluppatore ZF1 - non ero abituato all'uso dei moduli - così come intesi in ZF2. L'introduzione degli stessi può rappresentare una vera e propria svolta; è però fondamentale organizzare opportunamente il proprio progetto, dato che le reali possibilità di riuso dipendono in buona parte proprio da una buona organizzazione del proprio codice.">Arrivano i moduli: come li sfruttiamo?</a></h4>
-                                                    <a href="http://twitter.com/stefanovalle" title="stefano valle">Stefano Valle - @stefanovalle</a><br />
- 													<a href="http://www.slideshare.net/stefanovalle/moduli-zf2-come-li-sfruttiamo" title="" class="slides">Slide</a>
-                                                </td>
-					  </tr>
-
-
-                                          <tr class="break">
-                                              <td class="time">15:20 &ndash; 15:35</td>
-              <td>
-                <h4><strong>Pausa</strong></h4>
-              </td>
-            </tr>
-
-
-					  <tr class="common_event">
-					  	<td class="time">15:35 &ndash; 16:05</td>
-                                                <td>
-                                                    <h4><a href="#"  onclick="javascript:return(false);" rel="tooltip" title="In questo talk verranno presentate le novità di Zend Framework 2 per lo sviluppo di applicazioni web sicure. In particolare verranno illustrate alcune funzionalità di sicurezza, come la realizzazione di un sistema di login per l'autenticazione utente, l'implementazione di un sistema di autorizzazioni ACL o RBAC , il filtro dei dati in ingresso e l'escape dei dati in uscita, la memorizzazion sicura delle password degli utenti, etc.">Sviluppo di applicazioni web sicure con ZF2</a></h4>
-                                                    <a href="http://twitter.com/ezimuel" title="Enrico Zimuel">Enrico Zimuel - @ezimuel</a><br />
-													<a href="https://speakerdeck.com/ezimuel/sviluppo-di-applicazioni-web-sicure-con-zf2" title="" class="slides">Slide</a>
-
-                                                </td>
-					  </tr>
-
-
-					  <tr class="common_event">
-					  	<td class="time">16:10 &ndash; 16:40</td>
-                                                <td>
-                                                    <h4><a href="#"  onclick="javascript:return(false);" rel="tooltip" title="L'utilizzo di Zend Framework 1 all'interno del progetto Link, software usato da una 'fabbrica automobilistica torinese' per fornire servizi ai concessionari. Link è probabilmente il software in php più grande d'Europa con più di 6 milioni di righe di codice, nato nel 2003 utilizzando la versione 4 del linguaggio, Il talk illustrerà come negli anni si è passati dallo scriversi tutto in casa all'utilizzo dei moduli zend per abbassare i costi di sviluppo, migliorare la scalabilità e limitare le anomalie.">Case study: un approccio modulare in un progetto legacy</a></h4>
-                                                    <a href="http://twitter.com/martingiem" title="Mariano Fiorentino">Mariano Fiorentino - @martingiem</a><br />
- 													<a href="http://www.slideshare.net/mariano_fiorentino/slideware-16344389" title="" class="slides">Slide</a>
-
-                                                </td>
-					  </tr>
-
-
-
-                                          <tr class="common_event">
-					  	<td class="time">16:45</td>
-					    <td><h4><a href="#" title="">Chiusura</a></h4></td>
-					  </tr>
-					</table>
-
-				</div>
-                                <div class="separator"></div>
-			</section>
-
-			
-			<section class="alpha_32" >
-                            <a name="location"></a>
-                            <div class="container group" >
-					<h3 class="column_12">Location</h3>
-					<div class="column_6 map">
-						<div id="map_canvas"></div>
-					</div>
-
-					<div class="column_6 legend right">
-						<dl>
-						  <dt class="event_location"><span><strong>Event location</strong></span></dt>
-						    <dd  class="event_location">
-						    	<a href="http://www.t3lab.it">T3LAB</a><br/>
-                                                        via Sario Bassanelli, 9/11<br/>
-                                                        40129 – Bologna (BO)
-
-							</dd>
-						 
-						</dl>
-					</div>
-
-					<div class="clear"></div>
-
-					<div class="column_3">
-						<h5>In auto</h5>
-						<p>Dall’autostrada uscire a Bologna Arcoveggio, prendere la tangenziale ed uscire subito dopo alla numero 6. Proseguire verso il centro città; dopo aver superato il sottopasso ferroviario svoltare subito a sinistra in via Bassanelli. Il laboratorio si trova a piano terra della Fondazione Aldini (è possibile parcheggiare gratuitamente all’interno del parcheggio della Fondazione).</p>
-
-					</div>
-
-					<div class="column_3">
-						<h5>In treno/autobus</h5>
-						<p>Dalla Stazione centrale camminare per 50 metri verso la pensilina dei bus urbani dell’autostazione dei bus (via Indipendenza) e prendere una qualsiasi linea del 27 (A, B o C è indifferente) direzione Corticella (periferia) e scendere alla fermata “Istituto Aldini”, ovvero dopo 6 fermate. La linea 27 ha una frequenza di 5-7 minuti. Arrivati alla fermata, attraversare la strada ed entrare nel cancello del complesso Aldini. Il T3LAB si trova a piano terra della Fondazione Aldini (edificio laterale sulla destra).
-E’ possibile comprare il biglietto presso qualsiasi edicola o tabaccheria al costo di 1,20 euro, oppure acquistarlo direttamente a bordo alle self service al costo di 1,50 euro (le macchinette non danno resto).
-Per qualsiasi ulteriore informazione sugli orari e le fermate delle linee urbane ed extra-urbane visita il sito www.atc.bo.it.		</p>
-					</div>
-
-					<div class="column_3">
-						<h5>In Taxi</h5>
-						<p>Per prenotare un taxi è possibile contattare:
-                                                <ul>
-                                                    <li>CO.TA.BO. – Telefono +39 051-37.27.27</li>
-                                                    <li>CAT RadioTaxi – Telefono +39 051-45.90</li>
-                                                </ul>
-Per una corsa con partenza dalla stazione centrale o dal centro storico di Bologna il costo indicativo è di circa 8-10 euro.
-						</p>
-					</div>
-
-					<div class="column_3">
-						<h5>Pernottamento</h5>
-						<p>
-		<a href="http://www.booking.com/searchresults.html?src=city&nflt=&city=-111742&error_url=http%3A%2F%2Fwww.booking.com%2Fcity%2Fit%2Fbologna.it.html%3Fsid%3Da1b8ab0e936b87934cc499e966f96178%3Bdcid%3D1%3Binac%3D0%3B&dcid=1&lang=it&sid=a1b8ab0e936b87934cc499e966f96178&checkin_monthday=0&checkin_year_month=0&checkout_monthday=0&checkout_year_month=2013-6&idf=on&org_nr_rooms=1&org_nr_adults=2&org_nr_children=0" target="_blank">Alberghi in zona</a>
-						</p>
-					</div>
-				</div>
-
-
-				<div class="clear"></div>
-			</div>
-			<div class="separator"></div>
-			</section>
-
-			<section class="sponsors" style="display: none;">
-                <a name="sponsor"></a>
-                <div class="container group" >
-					<h3>Gli sponsor</h3>
-
-					<div class="gold_sponsors">
-						<h4 class="gold">Gold</h4>
-						<a class="banner" href="http://www.zend.com" title="Zend Technologies">
-							<img src="img/sponsor_zend.png" alt="sponsor Zend Technologies" />
-						</a>
-
-						<div class="clear"></div>
-					</div>
-
-					<div class="silver_sponsors">
-						<h4 class="silver">Silver</h4>
-						<a class="banner" href="http://www.neen.it" title="Neen">
-							<img src="img/sponsor_silver_neen.jpg" alt="Sponsor Neen" />
-						</a>
-
-						<a class="banner" href="http://www.mvassociati.it" title="Mvassociati">
-							<img src="img/sponsor_mvassociati.png" alt="sponsor Mvassociati" />
-						</a>
-
-                        <a class="banner" href="http://2013.phpday.it" title="phpday">
-                            <img src="img/sponsor_phpday.png" alt="sponsor phpday" />
-                       </a>
-
-
-						<div class="clear"></div>
-					</div>
-
-					<div class="bronze_sponsors">
-						<h4 class="bronze">Bronze</h4>
-
-						<a class="banner" href="http://www.phpbestpractices.it" title="PHP best practices">
-							<img src="img/php_best_practices.png" alt="sponsor PHP best practices" width="300" height="120" />
-						</a>
-
-
-						<a class="banner" href="http://milano.talentgarden.it" title="Talent Garden">
-							<img src="img/sponsor_talentgarden.png" alt="sponsor Talent Garden" />
-						</a>
-
-						<a class="banner" href="http://www.ideato.it" title="Ideato">
-							<img src="img/sposnor_ideato.jpg" alt="sponsor ideato" />
-						</a>
-
-                        <a class="banner" href="http://www.inode.it" title="Inode">
-                            <img src="img/sponsor_inode.png" alt="sponsor inode" />
-                        </a>
-
-                                                <br /><br />
-
-						<a class="banner" href="http://www.corley.it" title="Corley">
-							<img src="img/sponsor_corley.png" alt="sponsor Corley" />
-						</a>
-
-                        <a class="banner" href="http://qrurl.it/r/1in" title="servergrove">
-                            <img src="img/sponsor_servergrove.jpg" alt="sponsor Servergrove" />
-                        </a>
-
-                        <a class="banner" href="http://www.cost.it" title="Cost">
-                            <img src="img/sponsor_cost.png" alt="sponsor Cost" />
-                         </a>
-
-                        <a class="banner" href="http://www.corsozendframework.it" title="Corso Zend">
-                            <img src="img/sponsor_corso.png" alt="sponsor Corso Zend Framework" />   
-                        </a>
-
-                        <a class="banner" href="http://2013.jsday.it" title="jsday">
-                            <img src="img/sponsor_jsday.png" alt="sponsor jsday" />
-                        </a>
-
-
-						<div class="clear"></div>
-					</div>
-
-				</div>
-                                <div class="separator"></div>
-			</section>
-			
-			<footer id="site_footer">
-                            <div class="container group" >
-					<div class="ftr_info">
-						&copy; 2012-2013 Grusp. Tutti i diritti riservati.
-						<ul>
-						 	<li><a href="http://www.grusp.org" title="">Cos'&egrave; il Grusp?</a></li>
-						 	<!--li><a href="#" title="">Privacy policy</a></li-->
-						 	<li><a href="mailto:wpday@grusp.org" title="">Contattaci</a></li>
-						</ul>
-					</div>
-
-					<a id="back_top" href="#top" title="">Torna su</a>
-				</div>
-			</footer>
-
-		</div> <!-- Closes #wrapper -->
-	</div><!-- Closes #site_wrapper -->
-
-
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
- 	<script src="js/jquery.fittext.js"></script>
- 	<script src="js/jquery.tooltip.js"></script>
-	<script type="text/javascript">
-		$("#fittext1").fitText(1.0);
-		$("#fittext2").fitText(1.6);
-		//$("#fittext3").fitText(1.1, { minFontSize: 50, maxFontSize: '75px' });
-	</script>
-
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-3559597-14']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-</body>
+                        <h4>presentano</h4>
+                    </div>
+
+                    <div class="event_title">
+                        <div class="event_logo column_3">
+                            <img src="img/wordpress-logo.png" alt="Zend Framwork 2" />
+                        </div>
+                        <div class="event_name column_8">
+                            <h1 id="fittext1">WordPress <em>DAY</em></h1>
+                            <h2 id="fittext2">BOLOGNA, 13 Settembre 2013</h2>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+
+
+                    <div class="share">
+                        <h4>Share</h4>
+                        <div class="addthis_wrapper">
+                            <!-- AddThis Button BEGIN -->
+                            <div class="addthis_toolbox addthis_default_style ">
+                                <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+                                <a class="addthis_button_tweet"></a>
+                                <a class="addthis_counter addthis_pill_style"></a>
+                            </div>
+                            <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=xa-50ac9a3237717dfe"></script>
+                            <!-- AddThis Button END -->
+                        </div>
+                    </div>
+                    <div class="separator"></div>
+
+                </header>
+
+                <section class="alpha_8">
+                    <div class="container group">
+
+
+
+                        <!-- Follow us -->
+                        <div class="follow_us">
+                            <h4 class="deco">Seguici!</h4>
+
+                            <ul class="social_grusp">
+                                <li class="grusp_fb"><a href="https://www.facebook.com/events/206580366159056/" title="">Facebook</a></li>
+                                <li class="grusp_twitter"><a href="http://twitter.com/wpdayit" title="">Twitter</a></li>
+                                <li class="grusp_vimeo"><a href="http://vimeo.com/grusp" title="">Vimeo</a></li>
+                            </ul>
+                        </div>
+
+
+
+                    </div>
+                    <div class="separator"></div>
+                </section>
+
+                <a name="info"></a>
+                <section class="alpha_16">
+                    <div class="container group">
+
+                        <div class="column_6 centered">
+                            <h3 class="center">La conferenza</h3>
+
+                            <p><strong>WordPress &egrave; è attualmente il sistema per la gestione di blog e contenuti più utizzato al mondo.</strong></p>
+
+
+
+                            <p>Il WordPress Day è un evento per tutti gli sviluppatori di temi e plugin che introduce le best practice e ne mostra case study ad alto livello.
+                            </p>
+                            <p>Rimani informato ed <a href="http://eepurl.com/rCZZT" target="_blank">iscriviti alla nostra newsletter</a></p>
+                        </div>
+
+
+                        <div class="clear"></div>
+                    </div>
+                    <div class="separator"></div>
+                </section>
+
+
+                
+                <section class="alpha_24">
+                    <a name="programma"></a>
+                    <div class="container group">
+                        <!-- INSERT CALL FOR PAPER HERE -->
+                        <div class="column_6 centered">
+                            <h3 class="center">Call for paper</h3>
+                            <p>Il programma è in via di definizione. Se desideri <strong>proporre un talk</strong>, non esitare a <a href="https://docs.google.com/a/grusp.org/spreadsheet/viewform?formkey=dGlpUjVPci1xSVJVS0N3X0xrWXcyMFE6MA#gid=0">compilare la tua proposta</a>, hai tempo fino al 10 agosto 2013.</p>
+                        </div>
+                    </div>
+                    <div class="separator"></div>
+                </section>
+
+
+                <section class="alpha_24" style="display: none;">
+                    <a name="programma"></a>
+                    <div class="container group" >
+                        <h3 class="center">Il programma</h3>
+                        <table id="schedule" border="0" cellspacing="0" cellpadding="0">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Time
+                                    </th>
+                                    <th>
+                                        Track 1
+                                    </th>
+
+                                </tr>
+                            </thead>
+                            <tr class="common_event">
+                                <td class="time">09:00 &ndash; 09:30</td>
+                                <td><h4><a href="#" title="">Check-in</a></h4></td>
+                            </tr>
+
+                            <tr class="common_event">
+                                <td class="time">09:30 &ndash; 09:45</td>
+                                <td>
+                                    <h4><a href="#" title="">Introduzione PugMi e GrUSP</a></h4>
+                                    <a href="http://twitter.com/aleinside" title="Alessandro Nuzzo">Alessandro Nuzzo - @aleinside</a><br />
+                                    <a href="http://www.slideshare.net/aleinside/zfday-introduzione" title="Introduzione" class="slides">Slide</a>
+
+                                </td>
+                            </tr>
+
+                            <tr class="common_event">
+                                <td class="time">09:45 &ndash; 10:00</td>
+                                <td>
+                                    <h4><a href="#" title="">Zend Framework 2 - Lo stato dell'arte</a></h4>
+                                    <a href="http://twitter.com/ezimuel" title="Enrico Zimuel">Enrico Zimuel - @ezimuel</a><br />
+                                    <!-- 													<a href="#" title="" class="slides">Slide</a> -->
+
+                                </td>
+                            </tr>
+
+
+                            <tr class="common_event">
+                                <td class="time">10:05 &ndash; 10:50</td>
+                                <td>
+                                    <h4><a href="#" onclick="javascript:return(false);" rel="tooltip" title="Zend Framework 2 non è l'evoluzione di ZF, ma un progetto nuovo: il codice è stato riscritto e poche sono le parti in comune con la versione precedente. Lo sviluppatore abituato a ZF1 non ha vita facile, ed è fondato il timore di dover imparare tutto da capo. In questo talk vedremo come cambiare le vecchie abitudini di sviluppatori ZF1, per sfruttare al meglio le potenzialità del nuovo strumento. Attraverso esempi concreti, in cui vedremo all'opera i nuovi pattern e le best practice, mostreremo come - partendo con il piede giusto - il passaggio a ZF2 possa essere meno traumatico del previsto. Il talk è orientato soprattutto a chi già conosce ZF1, ma gli argomenti affrontati possono essere utili anche a chi si avvicina a ZF per la prima volta.">Fare con Zend Framework 2 ciò che facevo con ZF1</a></h4>
+                                    <a href="http://twitter.com/maraspin" title="Steve Maraspin">Steve Maraspin - @maraspin</a><br />
+                                    <a href="http://www.slideshare.net/maraspin/zend-framework-2-da-zf-1" title="" class="slides">Slide</a> 
+                                </td>
+                            </tr>
+
+                            <tr class="break">
+                                <td class="time">10:50 &ndash; 11:05</td>
+                                <td>
+                                    <h4><strong>Pausa</strong></h4>
+                                </td>
+                            </tr>
+
+                            <tr class="common_event">
+                                <td class="time">11:05 &ndash; 11:35</td>
+                                <td>
+                                    <h4><a href="#"  onclick="javascript:return(false);" rel="tooltip"  title="Negli ultimi mesi ho avuto modo di lavorare con Zend Framework 2. Per me è stata la prima esperienza di un certo peso dentro il mondo Zend venendo dal mondo Symfony. In questa presentazione vorrei fare un confronto 'alle differenze' tra i due framework PHP di seconda generazione più in voga al momento, partendo dal punto di vista di chi conosce Symfony2 (e che quindi ha già in mente concetti come dependency injection e servizi), mettendo in evidenza punti comuni, differenze, possibilità di integrazione">Zend Framework 2 per chi viene da Symfony2</a></h4>
+                                    <a href="http://twitter.com/_orso_" title="Michele Orselli">Michele Orselli - @_orso_</a><br />
+                                    <a href="http://www.slideshare.net/MicheleOrselli/sf2zf2" title="" class="slides">Slide</a>
+
+                                </td>
+                            </tr>
+
+
+                            <tr class="common_event">
+                                <td class="time">11:40 &ndash; 12:25</td>
+                                <td>
+                                    <h4><a href="#"  onclick="javascript:return(false);" rel="tooltip" title="Verranno introdotti i motivi per cui utilizzare o meno Doctrine 2 ORM, alcune delle sue funzionalità di base e successivamente come installare e configurare Doctrine 2 ORM per l'utilizzo in un'applicazione basata su Zend\Mvc. Successivamente saranno presentate le varie funzionalità di DoctrineModule, tra cui: * Validatori * Autenticazione * Form * Cache * Paginator * CLI Tools * Integrazione con ZendDeveloperTools Verranno inoltre descritte molte delle best-practices da impiegare durante lo sviluppo di un'applicazione basata su DoctrineModule.">Doctrine 2 ORM e Zend Framework 2: un'introduzione a DoctrineModule</a></h4>
+                                    <a href="http://twitter.com/ocramius" title="Marco Pivetta">Marco Pivetta - @ocramius</a><br />
+                                    <a href="http://marco-pivetta.com/doctrine-orm-zf2-tutorial/#/" title="" class="slides">Slide</a>
+
+                                </td>
+                            </tr>
+
+                            <tr class="common_event">
+                                <td class="time">12:30 &ndash; 13:00</td>
+                                <td>
+                                    <h4><a href="#"  onclick="javascript:return(false);" rel="tooltip" title="Come realizzare un modulo REST con ZF2">Creare moduli RESTful con Zend Framework 2</a></h4>
+                                    <a href="http://twitter.com/walterdalmut" title="walter dal mut">Walter Dal Mut - @walterdalmut</a><br />
+                                    <a href="http://www.slideshare.net/corleycloud/res-tful-modules-in-zf2" title="" class="slides">Slide</a>
+                                </td>
+                            </tr>
+
+                            <tr class="break lunch">
+                                <td class="time">13:00 &ndash; 14:15</td>
+
+                                <td><h4><strong>Pranzo</strong></h4></td>
+                            </tr>
+
+                            <tr class="common_event">
+                                <td class="time">14:15 &ndash; 14:45</td>
+                                <td>
+                                    <h4><a href="#"  onclick="javascript:return(false);" rel="tooltip" title="Avere URL pulite e ben strutturate è molto importante, sia da un punto di vista SEO, che di organizzazione delle proprie API. In Zend Framework 2 è il router ad occuparsi di gestire le richieste http, di delegare l'esecuzione delle stesse all'opportuno frammento di codice sorgente, e quindi di estrarne gli eventuali parametri. Questo talk introdurrà le potenti funzionalità del nuovo sistema di routing di ZF2. Grazie a esempi reali (con gestione di richiestte http, ma anche CLI), sarete in grado di utilizzare il nuovo router di ZF2 in tutta la sua flessibilità.">Levate l'ancora! Rotte senza problemi con ZF2</a></h4>
+                                    <a href="http://twitter.com/drigani" title="Diego Drigani">Diego Drigani - @drigani</a><br />
+                                    <a href="http://www.slideshare.net/drigani/levate-lancora-rotte-senza-problemi-con-zf2" title="" class="slides">Slide</a> 
+                                </td>
+                            </tr>
+
+                            <tr class="common_event">
+                                <td class="time">14:50 &ndash; 15:20</td>
+                                <td>
+                                    <h4><a href="#"  onclick="javascript:return(false);" rel="tooltip" title="Come organizzo il mio modello, se le entità di base sono condivise tra più moduli? La mia applicazione ha anche un pannello amministrativo: dove metto viste e file del front-end? Come gestisco le eventuali dipendenze esterne? In questo talk cercherò di rispondere a queste e altre domande relative all'organizzazione di un progetto ZF2, condividendo la mia esperienza pratica, i dubbi che mi sono posto, e le soluzioni che ho adottato. Non sempre le risposte sono state scontate, a maggior ragione dato che - quale sviluppatore ZF1 - non ero abituato all'uso dei moduli - così come intesi in ZF2. L'introduzione degli stessi può rappresentare una vera e propria svolta; è però fondamentale organizzare opportunamente il proprio progetto, dato che le reali possibilità di riuso dipendono in buona parte proprio da una buona organizzazione del proprio codice.">Arrivano i moduli: come li sfruttiamo?</a></h4>
+                                    <a href="http://twitter.com/stefanovalle" title="stefano valle">Stefano Valle - @stefanovalle</a><br />
+                                    <a href="http://www.slideshare.net/stefanovalle/moduli-zf2-come-li-sfruttiamo" title="" class="slides">Slide</a>
+                                </td>
+                            </tr>
+
+
+                            <tr class="break">
+                                <td class="time">15:20 &ndash; 15:35</td>
+                                <td>
+                                    <h4><strong>Pausa</strong></h4>
+                                </td>
+                            </tr>
+
+
+                            <tr class="common_event">
+                                <td class="time">15:35 &ndash; 16:05</td>
+                                <td>
+                                    <h4><a href="#"  onclick="javascript:return(false);" rel="tooltip" title="In questo talk verranno presentate le novità di Zend Framework 2 per lo sviluppo di applicazioni web sicure. In particolare verranno illustrate alcune funzionalità di sicurezza, come la realizzazione di un sistema di login per l'autenticazione utente, l'implementazione di un sistema di autorizzazioni ACL o RBAC , il filtro dei dati in ingresso e l'escape dei dati in uscita, la memorizzazion sicura delle password degli utenti, etc.">Sviluppo di applicazioni web sicure con ZF2</a></h4>
+                                    <a href="http://twitter.com/ezimuel" title="Enrico Zimuel">Enrico Zimuel - @ezimuel</a><br />
+                                    <a href="https://speakerdeck.com/ezimuel/sviluppo-di-applicazioni-web-sicure-con-zf2" title="" class="slides">Slide</a>
+
+                                </td>
+                            </tr>
+
+
+                            <tr class="common_event">
+                                <td class="time">16:10 &ndash; 16:40</td>
+                                <td>
+                                    <h4><a href="#"  onclick="javascript:return(false);" rel="tooltip" title="L'utilizzo di Zend Framework 1 all'interno del progetto Link, software usato da una 'fabbrica automobilistica torinese' per fornire servizi ai concessionari. Link è probabilmente il software in php più grande d'Europa con più di 6 milioni di righe di codice, nato nel 2003 utilizzando la versione 4 del linguaggio, Il talk illustrerà come negli anni si è passati dallo scriversi tutto in casa all'utilizzo dei moduli zend per abbassare i costi di sviluppo, migliorare la scalabilità e limitare le anomalie.">Case study: un approccio modulare in un progetto legacy</a></h4>
+                                    <a href="http://twitter.com/martingiem" title="Mariano Fiorentino">Mariano Fiorentino - @martingiem</a><br />
+                                    <a href="http://www.slideshare.net/mariano_fiorentino/slideware-16344389" title="" class="slides">Slide</a>
+
+                                </td>
+                            </tr>
+
+
+
+                            <tr class="common_event">
+                                <td class="time">16:45</td>
+                                <td><h4><a href="#" title="">Chiusura</a></h4></td>
+                            </tr>
+                        </table>
+
+                    </div>
+                    <div class="separator"></div>
+                </section>
+
+
+                <section class="alpha_32" >
+                    <a name="location"></a>
+                    <div class="container group" >
+                        <h3 class="column_12">Location</h3>
+                        <div class="column_6 map">
+                            <div id="map_canvas"></div>
+                        </div>
+
+                        <div class="column_6 legend right">
+                            <dl>
+                                <dt class="event_location"><span><strong>Event location</strong></span></dt>
+                                <dd  class="event_location">
+                                    <a href="http://www.t3lab.it">T3LAB</a><br/>
+                                    via Sario Bassanelli, 9/11<br/>
+                                    40129 – Bologna (BO)
+
+                                </dd>
+
+                            </dl>
+                        </div>
+
+                        <div class="clear"></div>
+
+                        <div class="column_3">
+                            <h5>In auto</h5>
+                            <p>Dall’autostrada uscire a Bologna Arcoveggio, prendere la tangenziale ed uscire subito dopo alla numero 6. Proseguire verso il centro città; dopo aver superato il sottopasso ferroviario svoltare subito a sinistra in via Bassanelli. Il laboratorio si trova a piano terra della Fondazione Aldini (è possibile parcheggiare gratuitamente all’interno del parcheggio della Fondazione).</p>
+
+                        </div>
+
+                        <div class="column_3">
+                            <h5>In treno/autobus</h5>
+                            <p>Dalla Stazione centrale camminare per 50 metri verso la pensilina dei bus urbani dell’autostazione dei bus (via Indipendenza) e prendere una qualsiasi linea del 27 (A, B o C è indifferente) direzione Corticella (periferia) e scendere alla fermata “Istituto Aldini”, ovvero dopo 6 fermate. La linea 27 ha una frequenza di 5-7 minuti. Arrivati alla fermata, attraversare la strada ed entrare nel cancello del complesso Aldini. Il T3LAB si trova a piano terra della Fondazione Aldini (edificio laterale sulla destra).
+                                E’ possibile comprare il biglietto presso qualsiasi edicola o tabaccheria al costo di 1,20 euro, oppure acquistarlo direttamente a bordo alle self service al costo di 1,50 euro (le macchinette non danno resto).
+                                Per qualsiasi ulteriore informazione sugli orari e le fermate delle linee urbane ed extra-urbane visita il sito www.atc.bo.it.		</p>
+                        </div>
+
+                        <div class="column_3">
+                            <h5>In Taxi</h5>
+                            <p>Per prenotare un taxi è possibile contattare:</p>
+                            <ul>
+                                <li>CO.TA.BO. – Telefono +39 051-37.27.27</li>
+                                <li>CAT RadioTaxi – Telefono +39 051-45.90</li>
+                            </ul>
+                            <p>Per una corsa con partenza dalla stazione centrale o dal centro storico di Bologna il costo indicativo è di circa 8-10 euro.
+                            </p>
+                        </div>
+
+                        <div class="column_3">
+                            <h5>Pernottamento</h5>
+                            <p>
+                                <a href="http://www.booking.com/searchresults.html?src=city&nflt=&city=-111742&error_url=http%3A%2F%2Fwww.booking.com%2Fcity%2Fit%2Fbologna.it.html%3Fsid%3Da1b8ab0e936b87934cc499e966f96178%3Bdcid%3D1%3Binac%3D0%3B&dcid=1&lang=it&sid=a1b8ab0e936b87934cc499e966f96178&checkin_monthday=0&checkin_year_month=0&checkout_monthday=0&checkout_year_month=2013-6&idf=on&org_nr_rooms=1&org_nr_adults=2&org_nr_children=0" target="_blank">Alberghi in zona</a>
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="clear"></div>
+
+                    <div class="separator"></div>
+                </section>
+
+
+                <section class="sponsors">
+                    <a name="sponsorizza"></a>
+                    <div class="container group">
+                        <div class="column_6 centered">
+                            <h3 class="center">Sponsorizza</h3>
+                            <p>Un grande evento &egrave; fatto anche di grandi sponsor, perch&eacute; quindi non sfruttare l'occasione e contribuire alla conferenza?<br/>
+                                <a href="mailto:info@grusp.org">Contattaci</a> per sapere come sponsorizzarci!</p>
+                        </div>
+                        <div class="clear"></div>
+
+                        <div class="column_4">
+                            <h4 class="gold">Gold</h4>
+                            <span class="euro btn">€ 1000</span>
+                            <ul class="benefit">
+                                <li>Banner sul sito</li>
+                                <li>Pubblicità nelle comunicazioni pre-evento</li>
+                                <li>Autorizzazione a portare pubblicità e gadget (ie. volantini, adesivi, magliette)</li>
+                                <li>Presenza logo sul programma stampato</li>
+                                <li>Posizionamento del vostro flyer nella sala</li>
+                            </ul>
+                        </div>
+
+                        <div class="column_4">
+                            <h4 class="silver">Silver</h4>
+                            <span class="euro btn">€ 500</span>
+                            <ul class="benefit">
+                                <li>Banner sul sito</li>
+                                <li>Pubblicità nelle comunicazioni pre-evento</li>
+                                <li>Autorizzazione a portare pubblicità e gadget (ie. volantini, adesivi, magliette)</li>
+                                <li>Presenza logo sul programma stampato</li>
+                            </ul>
+                        </div>
+
+                        <div class="column_4">
+                            <h4 class="bronze">Bronze</h4>
+                            <span class="euro btn">€ 300</span>
+                            <ul class="benefit">
+                                <li>Banner sul sito</li>
+                                <li>Autorizzazione a portare pubblicità e gadget (ie. volantini, adesivi, magliette)</li>
+                            </ul>
+                        </div>
+
+                        <div class="clear"></div>
+                    </div>
+                </section>
+
+
+                <footer id="site_footer">
+                    <div class="container group" >
+                        <div class="ftr_info">
+                            &copy; 2012-2013 Grusp. Tutti i diritti riservati.
+                            <ul>
+                                <li><a href="http://www.grusp.org" title="">Cos'&egrave; il Grusp?</a></li>
+                                <!--li><a href="#" title="">Privacy policy</a></li-->
+                                <li><a href="mailto:wpday@grusp.org" title="">Contattaci</a></li>
+                            </ul>
+                        </div>
+
+                        <a id="back_top" href="#top" title="">Torna su</a>
+                    </div>
+                </footer>
+
+            </div> <!-- Closes #wrapper -->
+        </div><!-- Closes #site_wrapper -->
+
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script src="js/jquery.fittext.js"></script>
+        <script src="js/jquery.tooltip.js"></script>
+        <script type="text/javascript">
+            $("#fittext1").fitText(1.0);
+            $("#fittext2").fitText(1.6);
+            //$("#fittext3").fitText(1.1, { minFontSize: 50, maxFontSize: '75px' });
+        </script>
+
+        <script type="text/javascript">
+
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-3559597-14']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+
+        </script>
+    </body>
 </html>
