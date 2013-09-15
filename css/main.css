@@ -468,7 +468,9 @@ a.slides {
 	display: inline-block;
 	height: 32px;
 	width: 32px;
-	padding: 5px 0 0 35px;
+	padding-left: 35px;
+	margin-top: 5px;
+	line-height: 32px;
 	background-color: transparent;
 	background-image: url(../img/slides.png);
 	background-repeat: no-repeat;
