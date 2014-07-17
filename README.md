@@ -8,7 +8,7 @@ Il WP Day è un evento per tutti gli sviluppatori di temi e plugin che introduce
 
 L'evento si terrà a Bologna il 13 Settembre 2013
 
-Tutte le informazioni sono disponibili sul sito [WpDay.it](http://www.wpday.it)
+Tutte le informazioni sono disponibili sul sito [WpDay.it](http://2013.wpday.it)
 
 ---
 
